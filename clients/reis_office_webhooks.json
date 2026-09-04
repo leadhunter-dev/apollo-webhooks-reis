@@ -1,0 +1,18 @@
+{
+  "client": "reis_office",
+  "discover_active": true,
+  "enrich_phone": true,
+  "telegram_enabled": true,
+  "positive_reply": {
+    "enabled": true,
+    "url": "https://api.leavo.ai/api/webhooks/f67e3800-a2cf-4702-959e-9eb7d2423de6"
+  },
+  "opened_multiple": {
+    "enabled": true,
+    "url": "https://api.leavo.ai/api/webhooks/a3989722-627e-4dae-b14a-776010631b9f",
+    "min_distinct_steps": 2,
+    "require_tracked": true
+  },
+  "_note": "discover_active=true varre as campanhas ATIVAS a cada rodada (main.py webhooks run). Não precisa mais listar IDs manualmente aqui — evita esquecer sequences novas como TI-INFRA/COMPRAS (ago/26).",
+  "_note_phone": "enrich_phone=true: antes de disparar, abre a página do contato (custa ~8 créditos da própria reis_office, confirmado ao vivo em 10/08) e inclui contact.phone no payload. Só telefone PESSOAL (mobile/direct) — nunca o da empresa (work_hq)."
+}

@@ -1,0 +1,9 @@
+.env
+.sessions/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/ops/webhook_fired/*.json
+!data/ops/webhook_fired/.gitkeep
+.DS_Store
+.venv/
